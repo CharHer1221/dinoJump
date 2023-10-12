@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(220, 221, 222);
+    font-family: 'Pixelify Sans' sans-serif;
+}
+.startnew{
+    width: 100vw;
+    margin: auto;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+}
+.game{
+    width: 600px;
+    height: 200px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+.gameover{
+    border: none;
+    margin: auto;  
+    
+    
+}
+h1{
+    font-family: 'Pixelify Sans', sans-serif; 
+    color: rgb(83, 83, 83);
+    font-size: 112px;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    
+    
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+.start-btn {
+    font-family: 'Pixelify Sans', sans-serif;
+    text-decoration: none;
+    color: rgb(220, 221, 222);
+    background-color: rgb(83, 83, 83);
+    font-size: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
+   
+
+}
+
+#newgame-btn{
+    font-family: 'Pixelify Sans', sans-serif;
+    text-decoration: none;
+    color: rgb(220, 221, 222);
+    background-color: rgb(83, 83, 83);
+    font-size: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
+    
+}
+#portfolio-btn{
+    font-family: 'Pixelify Sans', sans-serif;
+    text-decoration: none;
+    background-color: rgb(220, 221, 222);
+    color: rgb(83, 83, 83);
+    font-size: 40px;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid rgb(83, 83, 83);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
+    
+}
+button:active{
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+
+}
+
+
+
+.text{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 50px;
+    color: rgb(83, 83, 83);
+    text-align: center;
+    padding-top: 10px;
+}
+
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(images/trex-nobkg.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+
+}
+.jump{
+   animation: jump  0.3s linear;
+
+}
+
+@keyframes jump{
+    0%  {
+        top: 160px;
+    }
+    30% {
+        top: 120px;
+    }
+
+    50%{
+        top: 70px;
+    }
+
+    80%{
+        top: 120px;
+    }
+    100%{
+        top: 160px;
+    }
+}
+
+#cactus{
+    width: 20px;
+    height: 40px; 
+    position: relative;
+    top: 110px;
+    left: 580px;
+
+    background-image: url(images/cactus-nobkg.png);
+    background-size: 20px 40px;
+
+    animation: block 1.1s infinite   linear;
+    animation-delay: 2s;
+    animation-direction: normal;
+}
+
+@keyframes block{
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: -10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .gameover {
+        
+        width: 100vw;
+        margin-top: 30%;
+    }
+    .startnew{
+        width: auto;
+        margin: auto;
+        position: fixed;
+        top: 30%;
+        left: 35%;
+    }
+    .start-btn{
+        position: fixed;
+        top: 30%;
+        left: 25%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .gameover {
+        
+        width: 100vw;
+        margin-top: 30%;
+        
+
+    }
+    h1{
+        font-size: 64px;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+    #newgame-btn{
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    #portfolio-btn{
+        font-size: 24px;
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+    .startnew{
+        width: auto;
+        
+        margin: auto;
+        position: fixed;
+        top: 30%;
+        left: 30%;
+    }
+    .start-btn{
+        font-size: 24px;
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+}
+
