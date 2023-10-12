@@ -38,6 +38,15 @@ h1{
     
     
 }
+.tap{
+    display: none;
+    font-family: 'Pixelify Sans', sans-serif; 
+    color: rgb(83, 83, 83);
+    font-size: 64px;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
 .container{
     display: flex;
     justify-content: center;
@@ -96,6 +105,7 @@ button{
     box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
     
 }
+
 button:active{
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
@@ -187,6 +197,16 @@ button:active{
         position: fixed;
         top: 30%;
         left: 25%;
+    }
+    
+    .tap{
+        display: block;
+        font-family: 'Pixelify Sans', sans-serif; 
+        color: rgb(83, 83, 83);
+        font-size: 36px;
+        text-align: center;
+        position: relative;
+        top: 70%;
     }
 }
 @media only screen and (max-width: 500px) {
