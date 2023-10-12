@@ -40,12 +40,17 @@ h1{
 }
 .tap{
     display: none;
-    font-family: 'Pixelify Sans', sans-serif; 
-    color: rgb(83, 83, 83);
-    font-size: 64px;
-    text-align: center;
-    position: relative;
-    top: 30%;
+    
+}
+.key{
+    
+        font-family: 'Pixelify Sans', sans-serif; 
+        color: rgb(83, 83, 83);
+        font-size: 28px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        top: 65%;
 }
 .container{
     display: flex;
@@ -209,6 +214,9 @@ button:active{
         top: 30%;
         left: 25%;
     }
+    .key{
+        display: none;
+    }
     
     .tap{
         display: block;
@@ -239,6 +247,9 @@ button:active{
         margin-top: 30%;
         
 
+    }
+    .key{
+        display: hidden;
     }
     h1{
         font-size: 64px;
