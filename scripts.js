@@ -5,6 +5,11 @@ document.addEventListener("keydown", function (event) {
         startGame();
     }
 });
+document.addEventListener("touchstart", function (event) { 
+    if (event) {
+        startGame();
+    }
+});
 function jump() {
     if (dino.classList != "jump"){
     dino.classList.add("jump");
